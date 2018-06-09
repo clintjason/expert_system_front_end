@@ -347,7 +347,9 @@ blockquote:before {
 }
 
 .sponsor-img {
-    height: 100px;
+    display: block;
+    height: 120px;
+    margin-left: 25px;
 }
 
 /*----------------------------------*/

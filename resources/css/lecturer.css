@@ -1,0 +1,108 @@
+/* Orange color : #e67e22 */
+/*-------------------*/
+/*-- Generalities ---*/
+/*-------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    color: #555;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+/*---------------------------*/
+/*-- Reusable Components ---*/
+/*--------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*---------------------------*/
+/*---- Header Stylesheet ----*/
+/*--------------------------*/
+
+/*--- Navigation Links ---*/
+
+.nav-links {
+    margin-top: 50px;
+    list-style: none;
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+.nav-links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-links li:first-of-type {
+    margin-left: 0px;
+}
+
+.nav-links li a:link,
+.nav-links li a:visited
+{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 110%;
+    -webkit-transition: border-bottom 0.2s, padding-bottom 0.2s;
+    transition: border-bottom 0.2s, padding-bottom 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 5px;
+}
+
+/*--- Sticky Navigation ---*/
+
+.sticky {
+   background-color: rgba(255, 255, 255, 0.99)  ;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    -webkit-box-shadow:;
+    box-shadow: 2px 0 2px #ccc;
+    z-index: 9999;
+}
+
+.sticky .nav-links li a:link,
+.sticky .nav-links li a:visited,
+.sticky .slash
+{ color: #555; }
+
+.sticky .nav-links li a:hover,
+.sticky .nav-links li a:active {
+    padding-bottom: 15px;
+}
+
+.sticky .sticky-logo { 
+    display: block;
+    float: left;
+    height: 50px;
+    margin: 5px 0;
+}
+.sticky .logo { display: none; }
+.sticky .nav-links {
+    margin-top: 18px;
+    width: 60%;
+}

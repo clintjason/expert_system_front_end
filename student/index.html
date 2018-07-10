@@ -17,12 +17,11 @@
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    
+
     <!-- Bootstrap CSS-->
     <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
-    
+
     <!-- Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="vendor/ratings/ratings.css" media="all">
     <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
     <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
     <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
@@ -30,9 +29,9 @@
     <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" type="text/css" href="vendor/ratings/ratings.css" media="all">
 
     <!-- Main CSS-->
-    <link href="css/lecturer.css" rel="stylesheet" media="all">
     <link href="css/theme.css" rel="stylesheet" media="all">
 
 </head>
@@ -58,7 +57,7 @@
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">        
-                         <li>
+                         <li class="active">
                             <a href="index.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
@@ -81,7 +80,7 @@
                                 <li>
                                     <a href="add_course.html">Add Course</a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="course_list.html">Course List</a>
                                 </li>
                                 <li>
@@ -117,28 +116,20 @@
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="#">
+                <a href="index.html">
                     <img src="images/icon/logo.png" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li>
+                        <li class="active">
                             <a href="index.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-align-justify"></i>Course Outline</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="upload_course_outline.html">Upload Course Outline</a>
-                                </li>
-                                <li>
-                                    <a href="create_course_outline.html">Create Course Outline</a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
@@ -147,11 +138,11 @@
                                 <li>
                                     <a href="add_course.html">Add Course</a>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="course_list.html">Course List</a>
                                 </li>
                                 <li>
-                                    <a href="course_ratings.html">Course Ratings</a>
+                                    <a href="rate_course.html">Course Ratings</a>
                                 </li>
                             </ul>
                         </li>
@@ -163,7 +154,7 @@
                                     <a href="quiz_list.html">Quiz List</a>
                                 </li>
                                 <li>
-                                    <a href="create_quiz.html">Create Quiz</a>
+                                    <a href="take_quiz.html">Take Quiz</a>
                                 </li>
                                 <li>
                                     <a href="quiz_results.html">Quiz Results</a>
@@ -363,58 +354,155 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Course List</h2>
+                                    <h2 class="title-1">overview</h2>
                                 </div>
-                            </div>                            
-                        </div><br/>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="table-responsive table--no-card m-b-30">
-                                    <table class="table table-borderless table-striped table-earning">
-                                        <thead>
-                                            <tr>
-                                                <th>Course Code</th>
-                                                <th>Course Title</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>CEF 672</td>
-                                                <td>Multi-Agent Systems</td>
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit"><i class="zmdi zmdi-edit"></i></button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete"><i class="zmdi zmdi-delete"></i></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>CEF 652</td>
-                                                <td>Technical Writing and Research Methodology</td>
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit"><i class="zmdi zmdi-edit"></i></button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete"><i class="zmdi zmdi-delete"></i></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>CEF 610</td>
-                                                <td>Expert System</td>
-                                                <td>
-                                                    <div class="table-data-feature">
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Edit"><i class="zmdi zmdi-edit"></i></button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="Delete"><i class="zmdi zmdi-delete"></i></button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>                                
-                            </div>                            
+                            </div>
                         </div>
-                    </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account-o"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>1036</h2>
+                                                <span>students connected</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart2"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-receipt"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>3</h2>
+                                                <span>Courses Taught in Total</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart1"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-assignment"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>15</h2>
+                                                <span>Quizes taken this week</span>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart3"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-ticket-star"></i>
+                                            </div>
+                                            <div class="text">
+                                                <span>Your</span>
+                                                <h2>Ratings</h2>
+                                                <div class="acidjs-rating-stars">
+                                                    <form>
+                                                        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label><!--
+                                                        --><input type="radio" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label><!--
+                                                        --><input type="radio" checked="checked" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label><!--
+                                                        --><input type="radio" name="group-2" id="group-2-3" value="2" /><label for="group-2-3"></label><!--
+                                                        --><input type="radio" name="group-2" id="group-2-4"  value="1" /><label for="group-2-4"></label>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="overview-chart">
+                                            <canvas id="widgetChart4"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2">Quiz Statistics</h3>
+                                        <div class="chart-info">
+                                            <div class="chart-info__left">
+                                                <div class="chart-note">
+                                                    <span class="dot dot--green"></span>
+                                                    <span>&#37; pass</span>
+                                                </div>
+                                                <div class="chart-note mr-0">
+                                                    <span class="dot dot--blue"></span>
+                                                    <span>&#37; fail</span>
+                                                </div>
+                                            </div>
+                                            <div class="chart-info__right">
+                                                <div class="chart-statis">
+                                                    <span class="index incre">
+                                                        <i class="zmdi zmdi-long-arrow-up"></i>25%</span>
+                                                    <span class="label">pass</span>
+                                                </div>
+                                                <div class="chart-statis mr-0">
+                                                    <span class="index decre">
+                                                        <i class="zmdi zmdi-long-arrow-down"></i>10%</span>
+                                                    <span class="label">fail</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="recent-report__chart">
+                                            <canvas id="recent-rep-chart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card chart-percent-card">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">char by &#37;</h3>
+                                        <div class="row no-gutters">
+                                            <div class="col-xl-3">
+                                                <div class="chart-note-wrap">
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--blue"></span>
+                                                        <span>pass</span>
+                                                    </div>
+                                                    <div class="chart-note mr-0 d-block">
+                                                        <span class="dot dot--red"></span>
+                                                        <span>fail</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-9">
+                                                <div class="percent-chart">
+                                                    <canvas id="percent-chart"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
@@ -422,11 +510,13 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER-->
         </div>
-        <!-- END MAIN CONTENT-->
-        <!-- END PAGE CONTAINER-->
+
     </div>
 
     <!-- Jquery JS-->
@@ -434,11 +524,8 @@
     <!-- Bootstrap JS-->
     <script src="vendor/bootstrap-4.1/popper.min.js"></script>
     <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    
     <!-- Vendor JS       -->
     <script src="vendor/slick/slick.min.js">
-    </script>
-    <script src="vendor/dropzone/dropzone.js">
     </script>
     <script src="vendor/wow/wow.min.js"></script>
     <script src="vendor/animsition/animsition.min.js"></script>
